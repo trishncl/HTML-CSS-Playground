@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    background: url(Images/istockphoto-466732980-612x612.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+hr{
+    height: 2px;
+    background-color: brown;
+    border-color: brown;
+    border-width: 1px;
+}
+
+h1{
+    font-size: 40px;
+    margin:0;
+    margin-bottom: 15px;
+}
+
+.address{
+    margin-bottom: 5px
+}
+
+h2{
+    font-size: 30px;
+}
+
+h1, h2{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+p{
+    text-align: center;
+}
+
+.established{
+    font-style: italic;
+}
+
+img{
+    width: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -25px;
+}
+
+.menu{
+    background-color: burlywood;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding:20px;
+    max-width: 500px;
+}
+
+.item p{
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.flavor, .dessert {
+    text-align: left;
+    width: 75%;
+  }
+  
+.price {
+    text-align: right;
+    width: 25%;
+}
+
+.bottom-line{
+    margin-top: 25px;
+}
+
+footer{
+    font-size: 14px;
+}
+
+a{
+    color: black;
+}
+
+a:visited { color : black; }
+
+a:hover { color : brown; }
+
+a:active {color: brown;}

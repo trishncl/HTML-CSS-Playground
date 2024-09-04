@@ -1,0 +1,169 @@
+body{
+    margin: 0;
+    background-color: aliceblue;
+}
+
+.header{
+    text-align: center;
+}
+
+h1{
+    color: rgb(0, 0, 250);
+    margin-bottom: 5px;
+    font-family: Helvetica, sans-serif;
+    font-size: 35px;
+    font-weight: 760;
+}
+
+#caption{
+    margin:5px 0px;
+    white-space: pre;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.log-in{
+    background-color: white;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    width: 350px;
+    height:350px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.2);
+}
+
+.login{
+    display: block;
+    position: relative;
+    width:290px;
+    padding: 12px 15px;
+    margin-top:25px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    border: 0.5px solid rgba(0,0,0,0.2);
+}
+
+#email{
+    position: relative;
+    top: 15px;
+}
+
+.btn-login{
+    display: block;
+    position: relative;
+    width:321px;
+    padding: 11px 13px;
+    margin-top:13px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: blue;
+    border-radius: 5px;
+    border: 1px solid blue;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-login:hover{
+    background-color: white;
+    border: 0.5px solid rgba(0,0,0,0.2);
+    cursor: pointer;
+    color: blue;
+}
+
+.f-p{
+    display: block;
+    color: blue;
+    text-align: center;
+    text-decoration: none;
+    margin: 20px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+.f-p:hover{
+  color: blueviolet;
+}
+
+#log-in-hr{
+    width: 315px;
+    border: 0.2px solid rgba(0,0,0,0.2);
+}
+
+.create{
+    display: block;
+    position: relative;
+    padding: 15px 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+    color: white;
+    background-color: #03c04a;
+    border-radius: 5px;
+    border: 1px solid #03c04a;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 550;
+    transition: 0.3s;
+}
+
+.create:hover{
+    background-color: white;
+    color: #03c04a;
+    cursor: pointer;
+    border: 0.5px solid rgba(0,0,0,0.2);
+
+}
+
+#footer-c{
+    text-align: center;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+
+}
+
+.footer{
+    width: 100%;
+    background-color: white;
+    height: 200px;
+}
+
+.lang{
+    padding-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: gray;
+    font-size: 10px;
+    white-space: pre;
+}
+
+#footer-hr{
+    margin-top: 25px;
+    width: 560px;
+    border: 0.1px solid rgba(0,0,0,0.2);
+}
+
+.end{
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: gray;
+    font-size: 10px;
+    white-space: pre;
+    line-height: 20px;
+}
+
+#foot{
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    font-size: 10px;
+    margin-top: 15px;
+    margin-left: 483px;
+}

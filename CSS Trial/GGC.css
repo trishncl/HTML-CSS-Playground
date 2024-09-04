@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    background-color:#ffffed;
+}
+
+.header{
+    border-bottom: 4px solid darkgoldenrod;
+    background: url('Images/STUDENT\ PORTAL.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    margin: 0;
+}
+
+#spl{
+    text-align: center;
+    border-bottom: 1px solid darkgoldenrod;
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(184, 134, 11, 0.7);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.container{
+    position: fixed;
+    left: 25%;
+    height: 100vh;
+    width: 50vw;
+    text-align: center;
+    background-color: #D1FFBD;
+    box-shadow:0px 10px 50px 3px rgba(0,0,0,0.2);
+}
+
+.log-in{
+    position: relative;
+    top: 15px;
+    left: 75px;
+    width: 80%;
+    height: 60%;
+    border: 0.5px solid rgba(0,0,0,0.1);
+    display: block;
+}
+
+h3{
+    text-align: left;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 0.5px solid rgba(0,0,0,0.1);
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#un{
+    border-radius: 2px;
+    width: 80%;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    background-color: #D1FFBD;
+    border: 0.8px solid rgba(0,0,0,0.1);
+}
+
+#pw{
+    border-radius: 2px;
+    width: 80%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    background-color: #D1FFBD;
+    border: 0.8px solid rgba(0,0,0,0.1);
+}
+
+p{
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 5px;
+}
+
+button{
+    margin-top: 40px;
+    width: 18%;
+    height: 10%;
+    font-size: 16px;
+    background-color: rgba(184, 134, 11, 0.7);
+    border: 0.8px solid rgba(0,0,0,0.1);
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    transition: 1s;
+}
+
+button:hover{
+    background-color: ghostwhite;
+    color: black;
+}

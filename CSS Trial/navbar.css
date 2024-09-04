@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*main*/
+nav{
+    background-color: rgb(30,30,30);
+    padding:15px 25px;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 0 5px 2px black;
+}
+
+/*branding*/
+.branding{
+    display: inline-block;
+}
+
+.brand-title{
+    display: inline-block;
+    margin: 0;
+    color: white;
+    position: relative;
+    top:-8px;
+    left: 15px;
+}
+
+/*links—design*/
+.links-container{
+    float: right;
+    position: relative;
+    top:8px;
+    right: 50px;
+}
+
+.link{
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    transition: 0.3s;
+}
+
+.link:hover{
+    color: pink;
+}
+
+.link:active{
+    color: palevioletred;
+}
+
+.btn-link{
+    color: white;
+    text-decoration: none;
+    background-color: pink;
+    padding: 10px 15px;
+    margin-left: 20px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.btn-link:hover{
+    color: pink;
+    background-color: white;
+}
+
+.btn-link:active{
+    padding: 10px 20px;
+    color: palevioletred;
+    background-color: pink;
+}
+
