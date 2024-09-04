@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Display & Visibility.css">
+    <link rel="icon" href="images/display.png">
+    <title>Display & Visibility</title>
+</head>
+<body>
+    <h1>Display & Visibility</h1>
+    <section>
+        <h2>CSS Display</h2>
+            <p>Indicates the <b>display behavior</b> of an element.</p>
+                <pre>
+                    <i>*both of this attribute has its value as their defaults.</i>
+                    p{
+                        display:block;
+                    }
+
+                    span{
+                        display:inline;
+                    }
+                </pre>
+                <table>
+                    <caption>Common CSS Displays</caption>
+                    <thead>
+                        <th>Value</th>
+                        <th colspan="2">Description</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>block</td>
+                            <td colspan="2">Takes up full width and starts in a new line.</td>
+                        </tr>
+                        <tr>
+                            <td>none</td>
+                            <td colspan="2"><b>Removes</b> element from layout</td>
+                        </tr>
+                        <tr>
+                            <td>inline</td>
+                            <td colspan="2">Takes up <b>content width</b> (not affected by Width & Height)</td>
+                        </tr>
+                        <tr>
+                            <td>inline-block</td>
+                            <td colspan="2">Takes up <b>content width</b> (affected by Width & Height)</td>
+                        </tr>
+                        <tr>
+                            <td>flex</td>
+                            <td colspan="2">Flex Container</td>
+                        </tr>
+                        <tr>
+                            <td>grid</td>
+                            <td colspan="2">Grid Container</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3" href="https://www.w3schools.com/cssref/pr_class_display.php">Full CSS Displays List</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            
+                <p class="displays">Displays</p>
+                <p class="displays">Block</p>
+                <i class="notes">*That's why the p tag above is a block element since it covers all of the width.*</i>
+
+                <br>
+
+                <i class="notes">*Unlike the span which is the default value is inline, it only covers a certain width.*</i><br>
+                <span>Span</span>
+
+                <span class="span-block">This is span with display:block.</span>
+                <p class="displays">Block</p>
+
+                <p class="p-inline">This is paragraph with display:inline.</p>
+                <span>Inline</span><br>
+
+                <p class="none">None Display</p>
+                <i class="notes">*There's a content above but you can't see it because of the property "display" that has a value of 'none'.*</i><br>
+
+                <h3>Difference between Inline and Inline-block</h3>
+                <span id="in" class="sample">Inline (immovable—can't change width, height, margin, etc.)</span> 
+                <br>
+                <span id="in-b" class="sample">Inline-Block (changeable)</span>
+    </section>
+
+        <div id="one" class="container">
+            <h2>Hello World!</h2>
+        </div>
+
+        <div id="two" class="container">
+            <h2>Hello World!</h2>
+        </div>
+
+        <div id="three" class="container">
+            <h2>Hello World!</h2>
+        </div>
+
+        <div id="four" class="container">
+            <h2>Hello World!</h2>
+        </div>
+
+        <div id="five" class="container">
+            <h2>Hello World!</h2>
+        </div>
+
+        <div id="six" class="container">
+            <h2>Hello World!</h2>
+        </div>
+
+    <section>
+        <h2 id="visibility">CSS Visibility</h2>
+            <p>Indicates the <b>visibility</b> of an element.</p>
+            <p>Elements will always take up space in the layout.</p>
+                <pre>
+                    p{
+                        visbility:<b title="Element is invisible (takes up space)">hidden</b>;
+                    }
+
+                    span{
+                        visibility:<b title="Element is visible (default)">visible</b>;
+                    }
+                </pre>
+    </section>
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_dooAA2_SIQ?si=FtBJe5SHgsP5hXNm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <a href="Positions.htm">next>></a>
+</body>
+</html>

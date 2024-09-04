@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Selectors</title>
+</head>
+<body>
+    <h1>Simple Selectors</h1>
+
+    <h2>Selectors</h2>
+        <p>Used to <b>find</b> the HTML elements that we want to style or design using CSS. It can select <b>any number</b> of HTML elements and apply a certain style for them.</p>
+            <pre>
+                (head)
+                    (style)
+                        p{
+                            color: red;
+                            font-size: 50px;
+                        }
+                    (/style)
+                (/head)
+                (body)
+                        (p)Hello World!(/p)
+                (/body)
+            </pre>
+
+    <h2>Simple Selectors</h2>
+            <b>Selects element/s by using either their:</b>
+                <ul>
+                    <li><b>Tag Name</b> - Name of the HTML Element</li>
+                    <li><b>Class Name</b> - General Name assigned to Elements</li>
+                    <li><b>ID</b> - Unique Name assigned to an Element </li>
+                </ul>
+    
+    <i>Used before indicating the selector:</i>
+        <ul>
+            <li>Tag Name (only the tag)</li>
+            <li>Class Name - use dot before the selector (.p)</li>
+            <li>ID - used hashtag before the selector (#p)</li>
+        </ul>
+            <pre>
+                div{
+                    color: white;
+                }
+
+                .class{
+                    background: orange;
+                }
+
+                #id{
+                    background: yellow;
+                }
+            *ID is more specific than the class so the system will read the ID.*
+            </pre>
+
+            <a href="Colors & Units.htm">next>></a>
+
+</body> 
+</html>

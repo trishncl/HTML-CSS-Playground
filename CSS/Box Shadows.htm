@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Box Shadows.css">
+    <link rel="icon" href="images/box-shadow.jpg">
+    <title>Box Shadows</title>
+</head>
+<body>
+    <section>
+        <h1>Box Shadows</h1>
+            <p>Create a <b>shadow</b> around an element. This gives a <b>3D feeling</b> to our design.</p>
+            <pre>
+                /*box-shadow:x-off y-off color;*/
+                .container{
+                    box-shadow:5px 5px black;
+                }
+
+                *x-offset: (-) to the left | (+) to the right — y-offset: (-) to the top | (+) to the bottom*
+
+                           <b>CSS Box Shadow</b>
+                /*box-shadow:x-off y-off blur color;*/
+                .container{
+                    box-shadow:5px 5px 10px black;
+                }
+
+                          <b>CSS Box Shadow Spread</b>
+                /*box-shadow:x-off y-off blur spread color;*/
+                .container{
+                    box-shadow:5px 5px 10px 3px black;
+                }
+
+                             <b title="to invert the shadow">CSS Box Shadow Inset</b>
+                /*box-shadow:x-off y-off blur spread color inset;*/
+                .container{
+                    box-shadow:5px 5px 10px 3px black inset;
+                }
+
+                <b title="create multiple box shadows in one element">CSS Multiple Box Shadow</b>
+                .container{
+                    box-shadow:5px 5px 10px 3px black, -2px -2px 10px 3px blue;
+                }
+            </pre>
+    </section>
+    <div class="container">
+        <h2>Hi! I'm Trisha</h2>
+            <p>Lorem Ipsum</p>
+    </div>
+    <div class="container-1">
+        <h2>Multiple Box Shadows</h2>
+    </div>
+
+    <p><a href="https://cssgenerator.org">Box Shadow Generator</a></p>
+
+    <p>*-webkit- based on Chrome | -moz- mozilla fire fox</p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_80KN9nSMRs?si=TzoD1bNAB7GRSJ9N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <a href="Display & Visibility.htm">next>></a>
+</body>
+</html>

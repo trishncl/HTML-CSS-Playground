@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Colors & Units.css">
+    <title>Colors & Units</title>
+</head>
+
+<body>
+    <h1>Colors & Units</h1>
+
+    <h2>CSS Colors</h2>
+        <p>Colors can be set using:</p>
+            <ul>
+                <li><b>Color Names</b> (pre-defined)</li>
+                <li><b>RGB</b> (Red, Green, Blue)</li>
+                <li><b>RGBA</b> (Red, Green, Blue, Alpha)</li>
+                <li><b>HSL</b> (Hue, Saturation, Lightness)</li>
+                <li><b>HSLA</b> (Hue, Saturation, Lightness, Alpha)</li>
+                <li><b>HEX</b></li>
+            </ul>
+                <a href="https://www.w3schools.com/colors/colors_names.asp" target="_blank" alt="link to w3schools 140 colors">We have 140 pre-defined colors supported</a>
+            <pre>
+                <b>Pre-defined Colors</b>
+                    
+                    body{
+                        background: greenyellow;
+                    }
+
+                    p{
+                        color: tomato;
+                    }
+                
+                <b>RGB Colors</b>
+                    <i><b>Syntax</b> - rgb(red, green, blue)</i>
+                    <i><b title="255 is the highest—it is the lightest color.">Values</b> 0 - 225</i>
+                        
+                        body{
+                            background:rgb(50, 255, 100)
+                        }
+                    
+                        p{
+                            color:rgb(255, 255, 255);
+                        }
+                    
+                <b>RGBA Colors</b>
+                    <i><b title="Alpha is the transparency or opacity.">Syntax</b> - rgba(red, green, blue, alpha)</i>
+                    <i><b title="0 is the most transparent, while 1 is the most opaque">Values</b> 0 - 225 (RGB) | 0-1 (Alpha)</i>
+                        
+                        body{
+                            background:rgba()
+                        }
+
+                        p{
+                            color:rgba(255, 255, 255, 0.5)
+                        }
+
+                <b>HSL Colors</b>
+                    <i><b>Syntax</b> - hsl(hue, saturation, lightness)</i>
+                    <i><b>Values</b> 0 - 360 (hue) | 0% - 100% (sat. & lig.)</i>
+
+                        body{
+                            background: hsl(270, 100%, 50%)
+                        }
+
+                        p{
+                            color: hsl(0, 100%, 50%)
+                        }
+
+                        <img src="images/hue.png" alt="Hue Color Wheel" width="300px" title="by degree">
+
+                        <img src="images/Saturation.png" alt="Saturation" width="300px" title="100% is its maximum color density like opacity">
+
+                        <img src="images/lightness.png" alt="Lightness" width="300px" title="rarely used | 50% is the default lightness">
+
+                <b>HSLA Colors</b>
+                    <i><b>Syntax</b> - hsl(hue, saturation, lightness, alpha)</i>
+                    <i><b>Values</b> 0 - 360 (hue) | 0% - 100% (sat. & lig.) | 0-1 (alpha)</i>
+                        
+                        body{
+                            background:hsla(270, 100%, 50%, 0.7)
+                        }
+
+                        p{
+                            color:hsla(0, 100%, 50%, 0.3)
+                        }
+                
+                <b title="f is the highest value and 0 is the lowest value. | The last number in HEX code indicates the opacity of the color.">HEX</b>
+                <i><b >Syntax</b>#RRGGBB</i>
+
+                        body{
+                            background: #000000;
+                        }
+
+                        p{
+                            color: #ffffff
+                        }
+            </pre>
+    <section>
+        <h2>CSS Units</h2>
+            <p>These are used in <b>sizes</b> on CSS. Such as the <b>'font-size', 'width', and 'height'.</b></p>
+            <b>2 categories of Units</b>
+                <ul>
+                    <li title="permanent measurement, it doesn't base on others.">Absolute Lengths</li>
+                    <li title="it is a sized-base | Used to create responsive website">Relative Lengths</li>
+                </ul>
+
+                <div id="table-one">
+                    <table>
+                        <caption>Absolute Lengths</caption>
+                        <thead>
+                            <tr>
+                                <th>Unit</th>
+                                <th colspan="2">Description</th>
+                                <th colspan="2">Conversion</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b>cm</b></td>
+                                <td colspan="2">centimeters</td>
+                                <td colspan="2"></td>
+                            </tr>
+                            <tr>
+                                <td><b>mm</b></td>
+                                <td colspan="2">millimeters</td>
+                                <td colspan="2"></td>
+                            </tr>
+                            <tr>
+                                <td><b>in</b></td>
+                                <td colspan="2">inches</td>
+                                <td colspan="2">1in = 96px = 2.54cm</td>
+                            </tr>
+                            <tr>
+                                <td><b>px</b></td>
+                                <td colspan="2">pixels</td>
+                                <td colspan="2">1px = 0.0104in</td>
+                            </tr>
+                            <tr>
+                                <td><b>pt</b></td>
+                                <td colspan="2">points</td>
+                                <td colspan="2">1pt = 0.01389in</td>
+                            </tr>
+                            <tr>
+                                <td><b>pc</b></td>
+                                <td colspan="2">picas</td>
+                                <td colspan="2">1pc = 12 pt</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                    <br>
+                <div id="table-two">
+                    <table>
+                        <caption>Relative Lengths</caption>
+                        <thead>
+                            <th>Unit</th>
+                            <th colspan="3">Description</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>em</td>
+                                <td>Relative to the <u>font-size</u> of the element.</td>
+                            </tr>
+                            <tr>
+                                <td>ex</td>
+                                <td>Relative to the <u>x-height</u> of the current font.</td>
+                            </tr>
+                            <tr>
+                                <td>ch</td>
+                                <td>Relative to <u>width</u> of the character "0".</td>
+                            </tr>
+                            <tr>
+                                <td>rem</td>
+                                <td>Relative to <u>font-size</u> of the root element.</td>
+                            </tr>
+                            <tr>
+                                <td>vw</td>
+                                <td>Relative to <u>1% of the width</u> of the viewport*.</td>
+                            </tr>
+                            <tr>
+                                <td>vh</td>
+                                <td>Relative to <u>1% of the height</u> of the viewport*.</td>
+                            </tr>
+                            <tr>
+                                <td>vmin</td>
+                                <td>Relative to <u>1% of viewport's*</u> smaller dimension.</td>
+                            </tr>
+                            <tr>
+                                <td>vmax</td>
+                                <td>Relative to <u>1% of viewport's*</u> larger dimension.</td>
+                            </tr>
+                            <tr>
+                                <td>%</td>
+                                <td>Relative to the <u>parent element.</u></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+    </section>
+    <sectio id="practice">
+        <h2>Practice: different measurements</h2>
+            <h3 id="px">pixels</h3>
+            <h3 id="pt">points</h3>
+            <h3 id="vw" title="this is used to have a responsive website">viewidth</h3>
+            <h3 id="vh" title="this is used to have a responsive website">viewheight</h3>
+            <h3 id="em" title="most used measurement in fonts">em (parent) multiply it to the children</h3>
+            <h3 id="rem" title="most used measurement in fonts">follows the root element (html)</h3>
+    </section> 
+    <a href="Text Formatting & Fonts.htm">next>></a>
+</body>
+</html>

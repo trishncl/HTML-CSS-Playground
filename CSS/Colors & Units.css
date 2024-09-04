@@ -1,0 +1,45 @@
+table, tr, th, td {
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    text-align: center;
+}
+
+#table-one{
+    margin-left: 20%;
+}
+
+#table-two{
+    margin-left: 12%;
+}
+
+caption{
+    text-align: center;
+    caption-side: top;
+    font-size: 25px;
+}
+
+thead{
+    background-color: antiquewhite;
+}
+
+#px{
+    font-size: 50px;
+}
+
+#pt{
+    font-size: 35px;
+}
+
+#vw{
+    font-size: 5vw;
+}
+
+#vh{
+    font-size: 7vh;
+}
+
+#practice {
+    font-size: 2em;
+}
+

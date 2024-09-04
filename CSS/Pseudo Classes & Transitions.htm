@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Pseudo Classes & Transitions.css">
+        <link rel="icon" href="images/transition-icon.png">
+    <title>Pseudo Classes & Transitions</title>
+</head>
+<body>
+    <h1>Pseudo Classes & Transitions</h1>
+
+    <section>
+        <h2>CSS Pseudo Classes</h2>
+            <p>Adds <b>style</b> to <b>special states</b> of an element.</p>
+            <p>Such as <b>hover, click, disabled</b> and etc.</p>
+                <table>
+                    <caption>Common Pseudo Classes</caption>
+                    <thead>
+                        <th>Selector</th>
+                        <th>Description</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>:hover</td>
+                            <td>Mouse Over State</td>
+                        </tr>
+                        <tr>
+                            <td>:active</td>
+                            <td>Clicked / Active Links</td>
+                        </tr>
+                        <tr>
+                            <td>:focus</td>
+                            <td>Focused on fields</td>
+                        </tr>
+                        <tr>
+                            <td>:hover</td>
+                            <td>Mouse Over State</td>
+                        </tr>
+                        <tr>
+                            <td>:checked</td>
+                            <td>Selected Radioboxes / Checkboxes</td>
+                        </tr>
+                        <tr>
+                            <td>:disabled</td>
+                            <td>Disabled Inputs/Buttons</td>
+                        </tr>
+                    </tbody>
+                    <tr>
+                    <tfoot>
+                            <td colspan="4"><a href="https://www.w3schools.com/css/css_pseudo_classes.asp" target="_blank">Full Pseudo Classes List</a></td>
+                    </tfoot>
+                    </tr>
+                </table>
+                <p>We can use <b>pseudo classes</b> by adding it after a selector.</p>
+                    <pre>
+                        button{
+                            background-color:tomato;
+                        }
+
+                        button:hover{
+                            background-color:red;
+                        }
+
+                        button:active{
+                            background-color:blue;
+                        }
+                    </pre>
+            <button>Click Me</button>
+
+            <input type="text">
+
+            <input type="checkbox">
+            <input type="radio">
+    </section>
+    <section>
+        <h2>CSS Transitions</h2>
+            <p>Adds a <b>smooth transition</b> in between style changes.</p>
+            <pre>
+                button{
+                    background-color:tomato;
+                    transition:1s;
+                }
+
+                 button:hover{
+                    background-color:red;
+                }
+
+                button:active{
+                    background-color:blue;
+                }
+            </pre>
+        <p>Provides <b>specific properties</b> for smooth transition. </p>
+            <pre>
+                *transition:property duration*
+                button{
+                    background-color:tomato;
+                    transition:scale/background-color/opacity/width/height 2s;
+                }
+
+                *transition:duration delay*
+                button{
+                    background-color:tomato;
+                    transition:1s 2s;
+                }
+
+                   <b>Timing-Function</b>
+                *transition:timing duration*
+                button{
+                    background-color:tomato;
+                    transition:linear 2s;
+                }
+
+                button:hover;
+                    background-color:red;
+                    scale:1.1;
+
+                <b>*Shorthand Technique*</b>
+                *transition:property duration timing delay;*
+                button{
+                    background-color:tomato;
+                    transition:scale 1s linear 2s;
+                }
+            </pre>
+            <table>
+                <caption>Timing Functions</caption>
+                <thead>
+                    <tr>
+                        <th>Selector</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>ease</td>
+                        <td>Slow - Fast - Slow</td>
+                    </tr>
+                    <tr>
+                        <td>linear</td>
+                        <td>Linear Speed</td>
+                    </tr>
+                    <tr>
+                        <td>ease-in</td>
+                        <td>Slow - Fast</td>
+                    </tr>
+                    <tr>
+                        <td>ease-out</td>
+                        <td>Fast - Slow</td>
+                    </tr>
+                    <tr>
+                        <td>ease-in-out</td>
+                        <td>Slow</td>
+                    </tr>
+                    <tr>
+                        <td>cubic-beizer</td>
+                        <td>Define own values</td>
+                    </tr>
+                </thead>
+            </table>
+    </section>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/7fTlSraMuxg?si=LB0tvwW6GDLm1bS0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <a href="Box Shadows.htm">next>></a>
+</body>
+</html>

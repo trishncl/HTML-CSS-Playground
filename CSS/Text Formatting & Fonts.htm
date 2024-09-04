@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Text Formatting & Fonts.css">
+    <title>Text Formatting & Fonts</title>
+</head>
+<body>
+    <h1>Text Formatting & Fonts</h1>
+
+    <h2>Text Formatting</h2>
+    <table>
+        <caption>Text Appearance</caption>
+        <tr>
+            <th><b>Property</b></th>
+            <th><b>Description</b></th>
+        </tr>
+        <tr>
+            <td>color</td>
+            <td>Changes the color of the text</td>
+        </tr>
+        <tr>
+            <td>text-transform</td>
+            <td>Changes the letter of the text</td>
+        </tr>
+        <tr>
+            <td>text-shadow</td>
+            <td>Adds a shadow effect on the text</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <pre>
+        <b style="font-size: 20px;">3 Values of text-transform:</b>
+
+            h1{
+                text-transform: uppercase;
+            }
+
+            h2{
+                text-transform: lowercase;
+            }
+
+            h3{
+                text-transform: capitalize;
+            }
+
+        <b style="font-size: 20px;" id="t-s">Text-Shadow</b>
+
+            <b>Syntax:</b>
+                selector{
+                    text-shadow:h-pos v-pos blur color;
+                }
+
+                p{
+                    text-shadow:1px 1px 10px red;
+                }
+    </pre>
+
+    <table>
+        <caption>Text Alignment</caption>
+        <tr>
+            <th><b>Property</b></th>
+            <th><b>Description</b></th>
+        </tr>
+        <tr>
+            <td>text-align</td>
+            <td>Changes the alignment of the text</td>
+        </tr>
+        <tr>
+            <td>text-align-last</td>
+            <td>Changes the alignment on the last line of the text</td>
+        </tr>
+    </table>
+
+    <pre>
+        <b style="font-size: 20px;">Text-Align</b>
+
+            .left{
+                text-align:left;
+            }
+
+            .right{
+                text-align:right;
+            }
+
+            .center{
+                text-align:center;
+            }
+
+            .justify{
+                text-align:justify;
+            }
+    </pre>
+    <p id="lt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. (left | justify-last)</p>
+    <p id="rt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. (right | center-last)</p>
+    <p id="cr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. (center | right-last)</p>
+    <p id="jy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. (justifty | left-last)</p>
+
+    <pre>
+        <b style="font-size: 20px;">Text-Align-Last</b>
+
+            .last-left{
+                text-align-last:left;
+            }
+
+            .last-right{
+                text-align-last:right;
+            }
+
+            .last-center{
+                text-align-last:center;
+            }
+
+            .last-justify{
+                text-align-last:justify;
+            }
+    </pre>
+
+    <table>
+        <caption>Text Spacing</caption>
+        <tr>
+            <th><b>Property</b></th>
+            <th><b>Description</b></th>
+        </tr>
+        <tr>
+            <td>text-indent</td>
+            <td>Adds an indentation on the first line of the text</td>
+        </tr>
+        <tr>
+            <td>letter-spacing</td>
+            <td>Changes the spacing between the letters</td>
+        </tr>
+        <tr>
+            <td>word-spacing</td>
+            <td>Changes the spacing between the words</td>
+        </tr>
+        <tr>
+            <td>line-height</td>
+            <td>Changes the spacing between lines</td>
+        </tr>
+        <tr>
+            <td>white-space</td>
+            <td>Indicates the behavior of whitespaces when text overflows</td>
+        </tr>
+    </table>
+
+    <pre>
+        <b style="font-size: 20px;">Text-Indent</b>
+
+            p{
+                text-indent: 48px;
+            }
+    </pre>
+    <p id="indent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    <pre>
+        <b style="font-size: 20px;">Letter-Spacing</b>
+
+            p{
+                letter-spacing: 5px;
+            }
+    </pre>
+    <p id="l-s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    <pre>
+        <b style="font-size: 20px;">Word-Spacing</b>
+
+            p{
+                word-spacing: 25px;
+            }
+    </pre>
+    <p id="w-s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    <pre>
+        <b style="font-size: 20px;">Line-Height</b>
+
+            p{
+                line-height: 32px;
+            }
+    </pre>
+    <p id="l-h">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    <pre>
+        <b style="font-size: 20px;">White-Space</b>
+
+            .no-wrap{
+                white-space: nowrap;
+            }
+
+            .normal{
+                white-space: normal;
+            }
+
+            .pre{
+                white-space: pre;
+            }
+    </pre>
+    <p id="n-w">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. (no-wrap)</p>
+    <p id="normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. (normal)</p>
+    <p id="pre">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum 
+        dolor sit amet, consectetur adipiscing elit.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.  (pre)</p>
+
+    <h2>Fonts</h2> 
+        <p>It is the overall appearance of a digital & printed text; it has a certain style and can be changed accordingly.</p>
+    <table>
+        <tr>
+            <th><b>Property</b></th>
+            <th><b>Description</b></th>
+        </tr>
+        <tr>
+            <td>font-size</td>
+            <td>Changes the size of the text</td>
+        </tr>
+        <tr>
+            <td>font-family</td>
+            <td>Changes the the font of the letters</td>
+        </tr>
+        <tr>
+            <td>font-style</td>
+            <td>Changes the font style of the words</td>
+        </tr>
+        <tr>
+            <td>font-weight</td>
+            <td>Changes the thickness of the font</td>
+        </tr>
+        <tr>
+            <td>font-variant</td>
+            <td>Indicates a variant of a font</td>
+        </tr>
+    </table>
+
+    <p><b style="font-size: 20px;">font-size</b>
+        
+        p{
+            font-size:24px;
+        }
+
+<b style="font-size: 20px; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">font-family</b>
+
+        p{
+            font-family:Verdana;
+        }
+
+<b style="font-size: 20px; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-style:oblique ">font-style</b>
+
+        .normal{
+            font-style:normal;
+        }
+
+        .italic{
+            font-style:italic;
+        }
+
+        .oblique{
+            font-style:oblique;
+        }
+
+<i>*font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;*</i> 
+- also known as 'Font Fallbacks'—if the first font-family(Trebuchet MS) did not function 'Lucida Sans 
+Unicode' will be used.
+
+<b style="font-size: 20px; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-style:oblique; font-weight: 900; ">font-weight</b>
+
+        p{
+            font-weight:bold/1000/light/normal;
+        }
+
+<b style="font-size: 20px; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-style:oblique; font-weight: 900; font-variant: small-caps; ">Font-Variant</b>
+
+        .normal{
+            font-variant:normal;
+        }
+
+        .small-caps{
+            font-variant:samall-caps;
+        }
+    </p>
+    
+    <h2>Custom Google Fonts</h2>
+    <p>We can add more <a href="https://fonts.google.com">fonts</a> to our website by importing from google fonts.</p>
+        <h3>2 Ways of Importing Google Fonts</h3>
+            <ol>
+                <li>Using the <b><(link)></b> tag on HTML</li>
+                <li>Using the <b>@import</b> on CSS</li>
+            </ol>
+    <a href="Backgrounds.htm">next>></a>
+</body>
+</html>

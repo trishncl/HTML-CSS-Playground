@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Box Models, Padding, Border & Margin.css">
+    <title>Box Models, Padding, Border & Margin</title>
+</head>
+<body>
+    <h1>Box Models, Padding, Border & Margin</h1>
+
+        <h2 id="box-model">CSS Box Model</h2>
+            <img src="images/box model.png" width="500px" height="300px" style="margin-left: 33%;">
+            <ul>
+                <li><b>Content</b> - Anything inside an Element can be considered a content.</li>
+                <li><b>Padding</b> - Invisible spacing between the content and the border.</li>
+                <li><b>Border</b> - Black lines</li>
+                <li><b>Margin</b> - Invisible spacing outside the border.</li>
+            </ul>
+
+        <h2 id="padding">Padding</h2>
+            <p id="p-content">It is an <b>invisible space</b> between the <b>content</b> and the <b>border</b>.</p>
+                <pre>
+                    .container-1{
+                        padding-top:10px;
+                        padding-right:10px;
+                        padding-bottom:10px;
+                        padding-left:10px;
+                    }
+
+                    <i>*padding:y-padding x-padding;*</i>
+                    .container-2{
+                        padding:10px 25px;
+                    }
+
+                    <i>*padding:top right bottom left;*</i>
+                    .container-3{
+                        padding:5px 10px 5px 10px;
+                    }
+                </pre>
+        <h2 id="border">Border</h2>
+            <p id="b-content">A <b>visible line</b> that separates the <b>content</b> and other <b>elements</b>.</p>
+                <pre id="b-sample">
+                    <i>*border:width style color;*</i>
+                    .container-1{
+                        .border:2px solid tomato;
+                    }
+                </pre>
+                    <table>
+                        <tr>
+                            <th>Value</th>
+                            <th colspan="2">Description</th>
+                        </tr>
+                        <tr>
+                            <td><b>dotted</b></td>
+                            <td colspan="2">Dotted Lines</td>
+                        </tr>
+                        <tr>
+                            <td><b>dashed</b></td>
+                            <td colspan="2">Broken Lines</td>
+                        </tr>
+                        <tr>
+                            <td><b>solid</b></td>
+                            <td colspan="2">Solid Line</td>
+                        </tr>
+                        <tr>
+                            <td><b>double</b></td>
+                            <td colspan="2">Double Lines</td>
+                        </tr>
+                        <tr>
+                            <td><b>groove</b></td>
+                            <td colspan="2">3D Grooved Border</td>
+                        </tr>
+                        <tr>
+                            <td><b>ridge</b></td>
+                            <td colspan="2">3D Ridged Border</td>
+                        </tr>
+                        <tr>
+                            <td><b>inset</b></td>
+                            <td colspan="2">3D Debossed Border</td>
+                        </tr>
+                        <tr>
+                            <td><b>outset</b></td>
+                            <td colspan="2">3D Embossed Border</td>
+                        </tr>
+                    </table>
+            <h3>Border Controls</h3>
+                <p>Borders can be styled differently on each side.</p>
+                    <pre>
+                        .container-1{
+                            border-top:2px solid tomato;
+                            border-right:3px dotted tomato;
+                            border-bottom:4px dashed tomato;
+                            border-left:5px double tomato;
+                        }
+                    </pre>
+            <h3>Border Smoothness</h3>
+                <p>Borders can become rounded to achieve a modern feeling.</p>
+                    <pre>
+                        .container-1{
+                            border-top:2px solid tomato;
+                            border-radius:20px;
+                        }
+                    </pre>
+
+        <h2 id="margin">Margin</h2>
+            <p id="m-content">It is an <b>invisible space</b> between the border and other elements.</p>
+                <pre>
+                    .container-1{
+                        margin-top:10px;
+                        margin-right:10px;
+                        margin-bottom:10px;
+                        margin-left:10px;
+                    }
+
+                    <i>*margin:y-margin x-margin;*</i>
+                    .container-2{
+                        margin:10px 25px;
+                    }
+
+                    <i>*margin:top right bottom left;*</i>
+                    .container-3{
+                        margin:5px 10px 5px 10px;
+                    }
+                </pre>
+    <a href="Pseudo Classes & Transitions.htm">next>></a> 
+</body>
+</html>

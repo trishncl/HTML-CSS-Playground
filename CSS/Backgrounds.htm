@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Background.css">
+    <title>Backgrounds</title>
+</head>
+<body>
+    <h1>Backgrounds</h1>
+
+    <h2>Background Color</h2>
+        <p>Colors can be set using:</p>
+            <ul>
+                <li><b>Color Names</b> (pre-defined)</li>
+                <li><b>RGB</b> (Red, Green, Blue)</li>
+                <li><b>RGBA</b> (Red, Green, Blue, Alpha)</li>
+                <li><b>HSL</b> (Hue, Saturation, Lightness)</li>
+                <li><b>HSLA</b> (Hue, Saturation, Lightness, Alpha)</li>
+                <li><b>HEX</b></li>
+            </ul>
+        <pre>
+            body{
+                background-color: tomato;
+            }
+        </pre>
+    <h2>Background Images</h2>
+        <pre>
+            body{
+                background-image:url('bg.png')
+            }
+        </pre>
+        <h3>Background Repeat</h3>
+        <ul>
+            <li>repeat</li>
+            <li>repeat-x</li>
+            <li>repeat-y</li>
+            <li>round</li>
+            <li>space</li>
+            <li>no-repeat</li>
+        </ul>
+            <pre>
+                .container-1{
+                    background-image:url('bg.png')
+                    background-repeat:<b title="default behavior"> repeat;</b>
+                }
+
+                .container-2{
+                    background-image:url('bg.png')
+                    background-repeat:<b tile="repeat only in the x-axis">repeat-x;</b>
+                }               
+                
+                .container-3{
+                    background-image:url('bg.png')
+                    background-repeat:<b tile="repeat only in the y-axis">repeat-y;</b>
+                }
+
+                .container-4{
+                    background-image:url('bg.png')
+                    background-repeat:<b tile="does not cut the edges">round;</b>
+                }
+
+                .container-5{
+                    background-image:url('bg.png')
+                    background-repeat:<b tile="it has spaces between the repeated images">space;</b>
+                }
+
+                .container-5{
+                    background-image:url('bg.png')
+                    background-repeat:<b tile="the image is not repeated">no-repeat;</b>
+                }
+            </pre>
+        <h3>Background Attachment</h3>
+            <ul>
+                <li>scroll</li>
+                <li>fixed</li>
+            </ul>
+                <pre>
+                    .container-1{
+                        background-image:url('bg.png')
+                        background-attachment: <b title="default behaviour">scroll;</b>
+                    }
+    
+                    .container-2{
+                        background-image:url('bg.png')
+                        background-attachment:fixed;
+                    }   
+                </pre>
+        <h3>Background Position</h3>
+            <p><b>Syntax</b></p>
+            <p>background-position: x-pos y-pos;</p>
+            <p>background-position:right/center/left top/center/bottom</p>
+                <pre>
+                    .container-1{
+                        background-image:url('bg.png')
+                        background-position:right top;
+                    }
+
+                    .container-2{
+                        background-image:url('bg.png')
+                        background-position:50% 50%;
+                    }
+
+                    *0% - left most side | 100% - right most side*
+
+                    *0% - top most side | 100% - bottom most part
+                </pre>
+        <h3>Background Size</h3>
+            <ul>
+                <li>auto</li>
+                <li>contain</li>
+                <li>cover</li>
+            </ul>
+                <pre>
+                    .container-1{
+                        background-image:url('bg.png')
+                        background-size:<b title="default">auto</b>
+                    }
+
+                    .container-2{
+                        background-image:url('bg.png')
+                        background-size:<b title="forces the background to fit on the viewport; maintains the aspect ratio/true size">contain</b>
+                    }
+
+                    .container-2{
+                        background-image:url('bg.png')
+                        background-size:<b title="it will cover the whole website even if we zoom in the background">cover</b>
+                    }
+
+                    container-2{
+                        background-image:url('bg.png')
+                        background-size: 400px 200px;
+                    }
+
+                    *<b>Syntax</b> 
+                    background-size: x-size y-size;
+                </pre>
+        <h3>Background Shorthand</h3>
+            <pre>
+                body{
+                    background:url('bg.png') fixed no-repeat center top / cover;
+                }
+
+                *body{
+                    background:url('bg.png') bg-attachment bg-repeat bg-position / bg-size;
+                }*
+            </pre>
+    <a href="Box Models, Padding, Border & Margin.htm">next>></a>
+</body>
+</html>

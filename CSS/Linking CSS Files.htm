@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linking CSS Files</title>
+</head>
+<body>
+    <h1>Linking CSS Files</h1>
+        <h2>Ways to link CSS to HTML File</h2>
+            <ol>
+                <li>Internal CSS</li>
+                <li>External CSS</li>
+                <li>Inline CSS</li>
+            </ol>
+    <br/>
+
+    <h2>Internal CSS</h2>
+        <p>CSS that uses the <b>(style)</b> tag inside the HTML Document.</p>
+            <pre>
+                (p style="font-size: 13px; color: bisque")(i)*Currently using (b)CSS3(/b) which is the current standard and still updated up to this day.*(/i)(/p)
+            </pre>
+    <h2>External CSS</h2>
+        <p>Requires a separate <b>CSS File</b> and makes use of the <b>(link) tag</b> for us to be able to link the CSS File to our HTML Document.</p>
+            <pre>
+                (head)
+                    (link rel="stylesheet" href="style.css")
+                (/head)
+            </pre>
+    <h2>Inline CSS</h2>
+        <p>This is the <b>fastest way</b> to integrate styles to our HTML Document.</p>
+        <p>This can also make your code VERY HARD to read so DON'T use it unless you really need to.</p>
+        <p>It uses the <b>style attribute</b> in all the elements.</p>
+            <pre>
+                (p style='color:red; font-size:100px')Hello World(/p)
+            </pre>
+    <a href="Simple Selectors.htm">next>></a>
+</body>
+</html>

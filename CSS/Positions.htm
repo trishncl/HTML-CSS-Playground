@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Positions.css">
+    <title>Positions</title>
+</head>
+<body>
+    <h1>Positions</h1>
+
+    <section>
+        <h2>CSS Positions</h2>
+            <p>Indicates the <b>position behavior</b> of an element.</p>
+                <pre>
+                    p{
+                        position:static;
+                    }
+
+                    nav{
+                        position:sticky;
+                        top:0;
+                    }
+                </pre>
+            <table>
+                <thead>
+                    <th>Value</th>
+                    <th colspan="2">Description</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td title="default">static</td>
+                        <td colspan="2">Positioned according to the flow of the page.</td>
+                    </tr>
+                    <tr>
+                        <td>fixed</td>
+                        <td colspan="2">Positioned on the <b>same place</b> even if <b>scrolled</b>.</td>
+                    </tr>
+                    <tr>
+                        <td>sticky</td>
+                        <td colspan="2"><b>Sticks</b> in <b>positioned place</b> when not in <b>viewport</b>.</td>
+                    </tr>
+                    <tr>
+                        <td>absolute</td>
+                        <td colspan="2">Positioned relative to its <b>positioned parent</b>.</td>
+                    </tr>
+                    <tr>
+                        <td>relative</td>
+                        <td colspan="2">Positioned relative to its <b>defaul position</b>.</td>
+                    </tr>
+                </tbody>
+            </table>
+    </section>
+    <section>
+        <h2>CSS Positioning Properties</h2>
+            <p>Indicates the <b>margin edges</b> of a positioned element.</p>
+            <i style="font-size: 13px;">*This does not work with <b>static positioned</b> elements.</i>
+                <table>
+                    <thead>
+                        <th>Value</th>
+                        <th colspan="2">Description</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td >top</td>
+                            <td colspan="2"><b>Top edge margin</b> for a positioned element.</td>
+                        </tr>
+                        <tr>
+                            <td >right</td>
+                            <td colspan="2"><b>Right edge margin</b> for a positioned element.</td>
+                        </tr>
+                        <tr>
+                            <td >bottom</td>
+                            <td colspan="2"><b>Bottom edge margin</b> for a positioned element.</td>
+                        </tr>
+                        <tr>
+                            <td >left</td>
+                            <td colspan="2"><b>Left edge margin</b> for a positioned element.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <pre>
+                    .action-button{
+                        position:fixed;
+                        bottom:10px;
+                        right:10px;
+                    }
+                </pre>
+    </section>
+    <section>
+        <h3>Sticky</h3>
+        <h4 style="font-size: 20px;">Absolute</h4>
+    </section>
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/p--66ms3x9c?si=pRac23o1o6U0yP6s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <a href="Practical Application.htm">next>></a>
+</body>
+</html>

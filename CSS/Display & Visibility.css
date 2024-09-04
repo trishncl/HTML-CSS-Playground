@@ -1,0 +1,118 @@
+body{
+    margin: 0px;
+    background-color: blanchedalmond;
+}
+
+h1{
+    color: white;
+    background: #Ab784E;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 4px solid rgb(1, 1, 67);
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+
+p{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    font-size: 18px;
+}
+
+pre{
+    font-size: 16px;
+}
+
+table, tr, th, td {
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    text-align: center;
+}
+
+caption{
+    text-align: center;
+    caption-side: top;
+    font-size: 25px;
+}
+
+thead{
+    background-color: antiquewhite;
+}
+
+.notes{
+    font-size: 14px;
+}
+
+.displays{
+    background-color: #Ab784E;
+}
+
+span{
+    background-color: #Ab784E;
+}
+
+.span-block{
+    background-color: #Ab784E;
+    display: block;
+}
+
+.p-inline{
+    background-color: #Ab784E;
+    display: inline;
+}
+
+.none{
+    display: none;
+}
+
+.sample{
+    background-color: #Ab784E;
+}
+
+#in{
+    display: inline;
+    width: 500px;
+    margin-top: 10px;
+}
+
+#in-b{
+    display: inline-block;
+    width: 500px;
+    margin-top: 10px;
+}
+
+.container{
+    width: 200px;
+    height: 200px;
+    background-color: plum;
+    margin: 10px 5px;
+    box-shadow: 5px 5px 10px 5px rgba(164, 69, 162, 0.299);
+    border-radius: 5px;
+    display: inline-block;
+}
+
+#visibility{
+    border-top: 4px solid rgb(1, 1, 67);
+    padding-top: 10px;
+}
+
+#two{
+    visibility:hidden;
+}
+
+iframe{
+    margin-left: 30%;
+    margin-top: 50px;
+    margin-bottom: 10px;
+
+}
