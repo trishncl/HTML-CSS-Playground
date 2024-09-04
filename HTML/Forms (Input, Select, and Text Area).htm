@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms</title>
+    </head>
+    <body>
+        <a href="Special Characters (UTF-8).htm" class="link">next>></a>
+        <body style="background-color:beige;">
+            <h1>Form Element</h1>
+                <li>indicates a form</li>
+                <li>form tags are used in combination with other elements like (input), (textarea), and (select)</li>
+                <pre>
+                    Example: (form action="/action_page.php" target="_blank")
+                                (input type="email"/)(br/)
+                                (input type="password"/)(br/)
+                                (input type="submit"/)
+                             (/form)            
+                </pre>
+            <form action="/action_page.php" target="_blank">
+                <input type="email"/><br/>
+                <input type="password"/><br/>
+                <input type="submit"/>
+            </form>
+            <section>
+                <h1>(form) Element Attributes</h1>
+                    <li>action - specifies the action to perform after submitting the form.</li>
+                    <li>method - specifies the type of method that the form will use "GET" or "POST".</li>
+                    <li>target - specifies where the result will display after submitting the form.</li>
+                <h1>Input Element</h1>
+                    <p>indicates a textfield, radiobutton, checkbox etc.</p>
+                    <p>(input) tag has a lot of variety, we can change this by using the "type" attribute.</p>
+                    <pre>
+                        Example: 
+                            (input type="text"/)
+                            (input type="password"/)
+                            (input type="radio"/)
+                            (input type="checkbox"/)
+                            (input type="range"/)
+                            (input type="number"/)
+                            (input type="date"/)
+                            (input type="file"/)
+                    </pre>
+                        <input>
+                            <input type="text"/>
+                            <input type="password"/>
+                            <input type="radio"/>
+                            <input type="checkbox"/>
+                            <input type="range"/>
+                            <input type="number"/>
+                            <input type="date"/>
+                            <input type="file"/>
+                        </input>
+                <h1>(input) Element Attributes</h1>
+                    <p>These attributes are used generally for all input types some attributes are based on the input type.</p>
+                        <li>type - specifies the type input.</li>
+                        <li>name - specifies the name of the input (passed to server).</li>
+                        <li>value - specifies the default value of the input.</li>
+                        <li>required - specifies that the field is required.</li>
+                        <li>disabled - specifies that the field is disabled.</li>
+                        <li>readonly - speifies that the field can only be read.</li>
+                <h1>(input) Element Text Field Types</h1>
+                    <li>text - a normal text field.</li>
+                    <li>email - a text field with an email address validation.</li>
+                    <li>password - a text field that hides the text in it.</li>
+                    <li>number - a text field that only allows numbers.</li>
+                    <li>tel - a text field that has a telephone number format validation.</li>
+                    <li>search - a text field for searching.</li>
+                    <li>url - a text field with url validation.</li>
+                <h1>(input type="text") Attributes</h1>
+                    <li>placeholder - placeholder text shown in the textfield.</li>
+                    <li>minlength - minimum number of characters allowed.</li>
+                    <li>maxlength - maximum number of characters allowed.</li>
+                    <li>size - size of the textfield.</li></br>
+            </section>
+            <section>
+                <form target="_blank">
+                    <input type="text" disabled/><br/></br>
+                    <input type="text" value="The first box is disabled."/><br/></br>
+                    <input type="text" value="This box is read only." readonly/><br/></br>
+                    <input type="text" required value="Required"/></br>
+                    <input type="submit"/></br></br>
+                <p>Attributes of text</p>
+                    <input type="text" placeholder="First Name"/><br/></br>
+                    <input type="text" minlength="5" required/><br/>
+                    <input type="submit"/></br>
+                <p><bold>Email Input Type</bold></p>
+                    <input type="email" placeholder="Email Address" size="25"/><br/>
+                    <input type="submit"/></br>
+                <p><bold>Password Input Type</bold></p>
+                    <input type="password" placeholder="Password" required/><br/>
+                    <input type="submit"/></br>
+                <p><bold>Password Input Type</bold></p>
+                    <input type="number" placeholder="Number" step="5"/><br/></br>
+                <p><bold>Tel, Search, and URL Input Type</bold></p>
+                    <input type="tel" placeholder="Telephone"/><br/>
+                    <input type="search" placeholder="Search"/><br/>
+                    <input type="url" placeholder="URL"/><br/>
+                    <input type="submit"/></br>
+                </form>
+            </section>
+            <section>
+                <h1>(input) Element Date/Time Types</h1>
+                    <li>date - a field for inputting the date/month/year</li>
+                    <li>datetime-local - a field for inputting the date/month/year and time</li>
+                    <li>month - a field for inputting the month and year</li>
+                    <li>week - a field for inputting the week and year</li>
+                    <li>time - a field for inputting thetime</li>
+                    <strong>default format: YYYY/MM/DD</strong></br>
+                    <strong>default format (time): hh:mm</strong>
+
+                <h1>(input) Element Date/Time Attributes</h1>
+                    <li>min - sets the minimum date/time the user can pick</li>
+                    <li>sets the maximum date/time the user can pick</li>
+
+                <h1>(input) Element Button Types</h1>
+                    <li>file - a button that allows <bold>selection of files</bold> from local storage.</li>
+                    <li>checkbox - a toggleable button, allows <bold>multiple selection</bold></li>
+                    <li>radio - a toggleable button, allows <bold>only one selection</bold></li>
+                    <li>button - a classic button</li>
+                    <li>reset - a button that <bold>resets all the value</bold> of the form</li>
+                    <li>submit - a button for <bold>submitting the form</bold></li>
+
+                <h1>(input type="file") Attributes</h1>
+                    <li>accept - specifies the files accepted</li>
+                    <li>multiple - specifies if multiple files are accepted</li>
+                    <li>capture - specifies which camera to use for capture of image or video data</li></br>
+                    <input type="file" accept="image/*, application/pdf" multiple/><br/>
+
+                <h1>(input type="checkbox") Attributes</h1>
+                    <li>checked - specifies if the checkbox is checked by default.</li><br/>
+                        <input id="Animal" type="checkbox"/>
+                        <label for="Animal">Dog</label>
+
+                        <input id="Animal" type="checkbox"/>
+                        <label for="Animal">Cat</label><br/>
+                    <input type="submit"/>
+
+                <h1>(input type="radio") Attributes</h1>
+                    <li>checked - specifies if the radio button is selected by default.</li><br/>
+                        <input id="dog" type="radio" name="answer"/>
+                        <label for="dog">Dog</label>
+
+                        <input id="cat" type="radio" name="answer"/>
+                        <label for="cat">Cat</label><br/>
+                    <input type="submit"/><br/>
+                <strong>*To group an input element, put a "name" attribute. The value of name should be the same for you to group it.</strong><br/>
+                    <a href="https://youtu.be/jCzNeIFTH-k" target="blank"><input type="button" value="Luffy's Button"/></a><br/>
+                    <form target="_blank">
+                        <input type="text"/><br/>
+                        <input type="email" placeholder="Email" required/><br/>
+                        <input type="password" placeholder="Password" required/><br/>
+                        <input type="reset"/><br/>
+                        <input type="submit"/>
+                    </form>
+                </section>
+                <section>
+                    <h1>(input) Element Other Types</h1>
+                        <li>range - a field that lets you set a value using a slider.</li>
+                        <li>color - a field for selecting color.</li>
+                        <li>hidden - a field that is not visible.</li>
+                    <h1>(input type="range") Attributes</h1>
+                        <li>step - interval of steps to take when changing the value of the slider.</li>
+                        <li>min - minimum value of the slider</li>
+                        <li>max - maximum value of the slider</li><br/>
+                            <input type="range" step="" max="101" min="0" value="80"/><br/>
+                            <input type="color" value="#"/><br/>
+                            <input type="hidden"/><br/>
+                </section>
+                <section>
+                    <h1>(textarea) Element</h1>
+                        <p>indicates a text area</p>
+                        <pre>
+                            Example: (textarea rows="4" cols="50")
+                                        This is a sample text
+                                    (/textarea)
+                        </pre><br>
+                    <form target="_blank">
+                        <textarea rows="4" cols="50" maxlength="30"></textarea>
+                    </form>
+                    <h1>(select) Element</h1>
+                        <li>indicates a drop-down lsit</li>
+                        <li>the (select) element is used in combination with the (option) element.</li>
+                        <pre>Example:
+                            (select name="members")
+                                (option value="Trisha")Trisha(/option)
+                                (option value="Nicole")Trisha(/option)
+                                (option value="Labay")Trisha(/option)
+                                (option value="Sañosa")Trisha(/option)
+                            (/select)
+                        </pre>
+                    <h1>(select) Element Attributes</h1>
+                        <li>multiple - specifies if the user can select multiple items in the list.</li>
+                        <li>size - specifies number of options visible on the drop-down.</li>
+                        <li>name - specifies the name of the textarea</li>
+                        <li>required - specifies that the field is required</li>
+                        <li>disabled - specifies that the field is disabled</li>
+                        <li>form - specifies the form it belongs to using the form's id</li>
+                    <h1>(option) Element</h1>
+                        <p>indicates an item in a drop-down list</p>
+                    <form target="_blank">
+                        <select name="members" multiple>
+                            <option value="Trisha">Trisha</option>
+                            <option value="Nicole">Nicole</option>
+                            <option value="Labay">Labay</option>
+                            <option value="Sañosa">Sañosa</option>
+                        </select>
+                    </form>
+                    <h1>(optgroup) Element</h1>
+                        <p>indicates an item group in a drop-down list</p>
+                            <pre>Example:
+                                (select name="College")
+                                  (optgroup label="BatStateU")
+                                    (option value="IT 111")IT 111(/option)
+                                    (option value="CS 111")CS 111(/option)
+                                  (/optgroup)
+                                  (optgroup label="students")
+                                    (option value="Trisha")Trisha(/option)
+                                    (option value="Nicole")Trisha(/option)
+                                    (option value="Labay")Trisha(/option)
+                                    (option value="Sañosa")Trisha(/option)
+                                  (/optgroup)
+                                (/select)
+                            </pre>
+                    <h1>(optgroup) Element Attributes</h1>
+                        <li>label - specifies the name of the item group</li>
+                        <li>disabled - specifies that the item group is disabled</li><br/>
+                        <form target="_blank">
+                            <select name="College">
+                                <optgroup label="BatStateU">
+                                    <option value="IT 111">IT 111</option>
+                                    <option value="CS 111">CS 111</option>
+                                </optgroup>
+                                <optgroup label="students" disabled>
+                                    <option value="Trisha">Trisha</option>
+                                    <option value="Nicole">Nicole</option>
+                                    <option value="Labay">Labay</option>
+                                    <option value="Sañosa">Sañosa</option>
+                                </optgroup>
+                            </select>
+                        </form>
+                    <h1>(label) Element</h1>
+                        <p>indicates a label for an (input), (textarea), and (select) element</p><br>
+                        <p>the (label) element "for" attribute uses an id value to indicate what element they are bound to.</p>
+                            <pre>
+                                (label for="txtFullName")Full Name:(/label)
+                                (input type="text" id="txtFullName" name="fullName")
+
+                                (br)
+
+                                (label for="slcSex")Sex:(/label)
+                                (select id="slcSex")
+                                    (option value="M")Male(/option)
+                                    (option value="F")Female(/option)
+                                (/select)
+                            </pre>
+                    <form target="_blank">
+                        <label for="Name of your School">Complete Name of your School:</label>
+                        <input id ="Name of your School" type="text"/><br/>
+                        <label for="school">Choose your course:</label>
+                        <select id="school" name="College">
+                            <optgroup label="BatStateU">
+                                <option value="IT 111">IT 111</option>
+                                <option value="CS 111">CS 111</option>
+                            </optgroup>
+                            <optgroup label="students">
+                                <option value="Trisha">Trisha</option>
+                                <option value="Nicole">Nicole</option>
+                                <option value="Labay">Labay</option>
+                                <option value="Sañosa">Sañosa</option>
+                            </optgroup>
+                        </select>
+                    </form>       
+                </section>
+
+            <!-- TEXT FIELD TYPES -- >
+                <! -- 
+                    <input type="text"/><br/>
+                    <input type="email"/><br/>
+                    <input type="password"/><br/>
+                    <input type="number"/><br/>
+                    <input type="tel"/><br/>
+                    <input type="search"/><br/>
+                    <input type="url"/><br/>
+                -->
+            
+            <!-- BATE TIME TYPES -- >
+                <! -- 
+                    <input type="date"/><br/>
+                    <input type="datetime-local"/><br/>
+                    <input type="month"/><br/>
+                    <input type="week"/><br/>
+                    <input type="time"/><br/>
+                -->
+            
+            <!-- BUTTON TYPES -- >
+                <! -- 
+                    <input type="file"/></br>
+                    <input type="checkbox"/></br>
+                    <input type="radio"/></br>
+                    <input type="button"/></br>
+                    <input type="reset"/></br>
+                    <input type="submit"/></br>
+                -->
+
+            <!-- OTHER TYPES -- >
+                <! -- 
+                    <input type="range"/><br/>
+                    <input type="color"/><br/>
+                    <input type="hidden"/><br/>
+                -->
+            
+    </body>
+</html>

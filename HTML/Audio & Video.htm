@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Audio and Video</title>
+    </head>
+    <body>
+        <h1>Source Element (source>)</h1>
+            <p>indicates files for the browser to choose from.<br>
+                source tags are used within (<audio>), (<video>) and (<picture>) elements.<br> 
+            </p>
+            <pre>Example: (source src="music.mp3" type="audio/mp3">)
+            (source src="music.ogg" type="audio/ogg">)
+            </pre>
+        <h2>Source Element Attributes</h2>
+            <p>src - indicates the file path, can take a value of a URL (direct link) or a file path<br>
+               type - indicates the MIME-type of the resource<br>
+                     MIME-type helps identifying file types so it can be hadled accordingly<br>
+                     Mime Type Lists (https://www.freeformatter.com/mime-types-list.html)
+            </p>
+    <section>
+        <h1>Audio Element (audio>)</h1>
+            <p>used to play audio files.</p>
+            <pre>
+                <audio controls>
+                    <source src="music.mp3" type="audio/mp3">
+                    <source src="music.ogg" type="audio/ogg">
+                    Browser doesn't support the audio tag.
+                </audio>
+                or
+                <audio src="music.mp3" controls>Browser doesn't support the audio tag</audio>
+            </pre>
+        <h2>Audio Element Attributes</h2>
+            <p>src - indicates the file path<br>
+               controls - shows controls like play, pause<br>
+               autoplay - play audio automatically when loaded (doesn't work on some browsers)<br>
+               muted - audio would be muted by default<br>
+               loop - makes the audio replay infinite times<br>
+               src attribute - (audio src="audio.mp3"/)<br>
+               other attributes (doesn't need any value) - (audio src="audio.mp3" controls autoplay loop muted/)
+            </p>
+    </section>
+    <section>
+        <h1>Video Element (video>)</h1>
+            <pre>use to play video files.
+            <video width="320" height="240" controls>
+                <source src="vid.mp4" type="audio/mp4">
+                <source src="vid.ogg" type="audio/ogg">
+                Browser doesn't support the video tag.
+            </video>
+            or 
+            <video src="vid.mp4" width="320" height="240" controls>Browser doesn't support the video tag</video>
+            </pre>
+            <h2>Video Element Attributes</h2>
+                <p>same with audio element attributes, only added with width and height<br>
+                src attribute - (vid src="vid.mp4" width="320" height="240"/)<br>
+                other attributes - (vid src="vid.mp4" width="320" height="240" controls autoplay loop muted/)
+                </p>
+    </section>
+
+
+
+
+
+
+    </body>
+</html>

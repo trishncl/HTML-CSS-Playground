@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="cat.jpg">
+    <title>CatPhotoSite</title>
+</head>
+<body>
+    <h1>CatPhotoApp</h1>
+
+    <section>
+        <h2>Cat Photos</h2>
+            <p>See more <a href="https://www.freeimages.com/search/cat" target="_self">cat photos</a> in our gallery.</p>
+                <img src="catphoto.jpeg" width="250px" height="200px" alt="a cute cat lying in the bed">
+    </section>
+    <section>
+        <h2>Cat Lists</h2>
+            <h3>Things cats love:</h3>
+                <ul>
+                    <li>cat nip</li>
+                    <li>laser pointers</li>
+                    <li>lasagna</li>
+                </ul>
+        <figure>
+            <img src="lasagna.jpg" alt="lasagna" width="250px" height="200px">
+                <figcaption>Cats <em>love</em> lasagna.</figcaption>
+        </figure>
+    </section>
+    <section>
+        <h3>Top 3 things cats hate:</h3>
+            <ol>
+                <li>flea treatment</li>
+                <li>thunder</li>
+                <li>other cats</li>
+            </ol>
+        <figure>
+            <img src="plentycats.jpg" width="250px" height="200px" alt="three cas under the blanket">
+                <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+        </figure>
+    </section>
+    <section>
+        <h2>Cat Form</h2>
+            <form action="https://freecatphotoapp.com/submit-cat-photo">
+                <fieldset>
+                        <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+                        <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+                   </fieldset>
+
+                <!--The thing I used before doing the excercise in freeCodeCamp: The correct answer is stated above 
+                    <p>Is your cat an indoor or outdoor cat?</p>
+                        <input id="indoor" type="radio" name="answer"/>
+                            <label for="indoor">Indoor</label>
+                        <input id="outdoor" type="radio" name="answer"/>
+                            <label for="outdoor">Outdoor</label>
+                -->
+
+                <fieldset>
+                        <legend>What's your cat's personality?</legend>
+                            <input id="loving" type="checkbox" name="personality" value="loving" checked> <label for="loving">Loving</label>
+                            <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
+                            <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic"> Energetic</label>
+                </fieldset>
+
+                <!--The thing I used before doing the excercise in freeCodeCamp: The correct answer is stated above 
+                <p>What's your cat's personality?</p>
+                    <input id="loving" type="checkbox"/>
+                        <label for="loving">Loving</label>
+                    <input id="lazy" type="checkbox"/>
+                        <label for="lazy">Lazy</label>
+                    <input id="energetic" type="checkbox"/>
+                        <label for="energetic">Energetic</label>
+                    
+                    <br/>
+                -->
+
+                    <input type="text" name="catphotourl" placeholder="cat photo URL" required/>
+                        <button type="submit">Submit</button>
+                        <!--or you can use this element to have a Submit button 
+                                <input type="submit"/>
+                        -->
+            </form>
+    </section>
+    <footer>
+        <p>No Copyright - <a href="https://www.freecodecamp.org/">freeCodeCamp.org</a> </p>
+    </footer>
+</body>
+</html>

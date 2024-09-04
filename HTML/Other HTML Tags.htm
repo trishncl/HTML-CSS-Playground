@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/icon.jpg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        alert('Hello! This site is all about HTML Tags that were not emphasized in the series but still hold great importance.')
+    </script>
+    <title>Other HTML Tags</title>
+</head>
+<body>
+    <h1>Other HTML Tags</h1>
+
+    <h1><(meta)> Tag</h1>
+        <p>Defines <b title="a set of data that describes and gives information about other data.">metadata</b> about the HTML file, it should always be placed inside the <b>(head)</b> tag.</p>
+        <p>The <b>(meta)</b> tag does not display anything in the webpage but is essential in <b>giving instructions</b> on how the webpage is <b>displayed</b> or <b>searched</b> in search engines.</p>
+            <pre>
+                (html)
+                    (head)
+                        (meta <b title="A character set is a collection of characters used to represent text in a computer system. It includes letters, numbers, symbols, and other characters that a computer can display or process.">charset</b>=<b title="UTF-8 encodes Unicode characters into a sequence of 8-bit bytes. The standard has a capacity for over a million distinct codepoints and is a superset of all characters in widespread use today. By comparison, ASCII (American Standard Code for Information Interchange) includes 128 character codes.">"UTF-8"</b>)
+                        (meta name="description" content="Free Programming Tutorials")
+                        (meta name="keywords" content="Programming, HTML, BSIT")
+                        (meta name="author" content="ncl")
+                        (meta name=<b title="(for responsive websites) A viewport is a region of the screen used to display a portion of the total image to be shown.">"viewport"</b> content="width=device-width, initial-scale=1.0")
+                    (head)
+                (html)
+
+                These (3) values are the most important in <(meta)> tag: description, keywords, author.
+                Practice including <(meta)> tag in any website you're doing for it can help the <b title="Process of improving your website to increase its visibility in Google, Microsoft Bing, and other search engines whenever people search for: Products you sell.">Search Engine Optimization (SEO)</b>.
+            </pre>
+
+    <section>
+        <h1><(link)> Tag</h1>
+            <p>Defines a <b>"link"</b> between the HTML file to an <b>external source file</b>, such as favicons and stylesheets (css).</p>
+            <p>It is normally used in the <b>(head)</b> tag to associate an <b>icon</b> or a <b>css file</b> to the html document.</p>
+                <pre>
+                    (html)
+                        (head)
+                            (<b title="displays an image/icon in your tab">link</b> <b title="relationship">rel</b>="icon" href="favicon.ico"/)
+                            (link rel="stylesheet" href="style.css"/)
+                        (/head)
+                    (/html)
+                </pre>
+    </section>
+
+    <section>
+        <h1><(script)> Tag</h1>
+            <p>It is used to include a <b>client-side script</b> which is <b>JavaScript</b>.</p>
+            <p>It can be used by either including a JavaScript code inside the tag or using an external file using the <b>src</b> attribute.</p>
+                <pre>
+                    (script)
+                        alert('Hello World!')
+                    (/script)
+
+                    (script src='somescript.js')(/script)
+                </pre>
+    </section>
+
+    <section>
+        <h1><(iframe)> Tag</h1>
+            <p>It is udes to <b>embed</b> an HTML Document within an HTML Document.</p>
+            <p>It is often used to <b>include buttons</b> or <b>content from other websites.</b></p>
+                <pre>
+                    (html)
+                        (body)
+                            (iframe src="https://biyaya-starosa.web.app" title="Biyaya Application"/)
+                        (/body)
+                    (/html)
+                </pre>
+            <iframe width="1280px" height="720px" src="https://solo-leveling.fandom.com/wiki/Solo_Leveling" title="Solo Leveling Wiki Fandom"></iframe>
+    </section>
+
+    <section>
+        <h1><(progress)> Tag</h1>
+            <p> It is used to <b>diplay a progress bar</b>. It is commonly used to <b>display tasks progress</b>.</p>
+            <p><b>(label) tags</b> can also be used for the <b>progress tags</b> for accessibility.</p>
+                <pre>
+                    (html)
+                        (body)
+                            (progress value ="75" max="100"/)
+                        (/body)
+                    (/html)
+                    <progress value ="75" max="100"></progress>
+                    We can manipulate it using the JavaScript.
+                </pre>
+    </section>
+</body>
+</html>

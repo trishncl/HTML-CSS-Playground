@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tables</title>
+        <style>
+            table, tr, th, td {
+                border-width: 1px;
+                border-color: black;
+                border-style: solid;
+
+            }
+
+            caption{
+                text-align: center;
+                caption-side: bottom;
+            }
+
+            thead{
+                background-color: antiquewhite;
+            }
+
+            tfoot{
+                background-color: aliceblue;
+            }
+
+        </style>
+    </head>
+    <body>
+        <a href="Forms (Input, Select, and Text Area).htm" class="link">next>></a>
+        <bold>CSS: style tag is inside the head</bold>
+        <h1>Table Element (table)</h1>
+            <p>Indicates a table</p><br>
+                <pre>
+                    (table)
+                        (tr)
+                            (th)Title 1(/th)
+                            (th)Title 2(/th)
+                        (/tr)
+                        (tr)
+                            (td)Content 1(/td)
+                            (td)Content 2(/td)
+                        (/tr)
+                    (/table)
+                    <li>(table) Tags are used in combination with other elements like (tr), (td), (th) and etc.</li>
+                </pre>
+    <section>
+        <table>
+            <tr>
+                <th>Title 1</th>
+                <th>Title 2</th>
+            </tr>
+            <tr>
+                <td>Content 1</td>
+                <td>Content 2</td>
+            </tr>
+        </table>
+    </section>
+    <ul>
+        <li>(table) Table Element - indicates a table</li>
+        <li>(tr) Table Row Element (pahiga) - indicates a table row, also used within the (table) tag to indicate row in a table</li>
+        <li>(th) Table Heading Elemrnt - indicates a table cell, used within (tr) tag to indicate a heading cell</li>
+        <li>(td) Table Data Element - indicates a table cell content, used within (tr) tag to indicate a content cell</li>
+    </ul>
+    <section>
+        <table>
+            <tr>
+                <th>Dogs</th>
+                <th>Cats</th>
+                <th>Rabbit</th>
+            </tr>
+                <td>Shiba Inu</td>
+                <td>Persian Cat</td>
+                <td>Snow Rabbit</td>
+            <tr>
+            <tr>
+
+            </tr>
+                <td>Husky</td>
+                <td>Siamese</td>
+                <td>Californian Rabbit</td>
+            </tr>
+        </table>
+    </section>
+    <section>
+        <h1>Element Attributes (th) and (td)</h1>
+        <ol>
+            <li>colspan - specifies the column span of the cell.</li>
+            <li>rowspan - specifies the row span of the cell.</li>
+        </ol>
+        <table>
+            <tr>
+                <th rowspan="2">Names</th>
+                <th colspan="3">Subjects</th>
+            </tr>
+            <tr>
+                <td>C++</td>
+                <td>Java</td>
+                <td>Phyton</td>
+            </tr>
+            <tr>
+                <td>Trisha</td>
+                <td>94</td>
+                <td>96</td>
+                <td>98</td>
+            </tr>
+            <tr>
+                <td>Nicole</td>
+                <td>93</td>
+                <td>95</td>
+                <td>97</td>
+            </tr>
+            <tr>
+                <td>L.Sañosa</td>
+                <td>95</td>
+                <td>91</td>
+                <td>94</td>
+            </tr>
+        </table>
+    </section>
+    <section>
+        <h1>Caption Element (caption)</h1>
+            <li>indicates a caption</li>
+            <li>(caption) tags by default are centered aligned and on the top of the table, it can be customized using CSS.</li><br>
+                <table>
+                    <caption>First Semester Grades</caption>
+                        <tr>
+                            <th rowspan="2">Names</th>
+                            <th colspan="3">Subjects</th>
+                        </tr>
+                        <tr>
+                            <td>C++</td>
+                            <td>Java</td>
+                            <td>Phyton</td>
+                        </tr>
+                        <tr>
+                            <td>Trisha</td>
+                            <td>94</td>
+                            <td>96</td>
+                            <td>98</td>
+                        </tr>
+                        <tr>
+                            <td>Nicole</td>
+                            <td>93</td>
+                            <td>95</td>
+                            <td>97</td>
+                        </tr>
+                        <tr>
+                            <td>L.Sañosa</td>
+                            <td>95</td>
+                            <td>91</td>
+                            <td>94</td>
+                        </tr>
+                </table><br>
+    </section>
+    <section>
+            <li>(color group) - specifies a group of one or more columns in a table for formatting.</li>
+            <li>(col) - specifies column properties for each column within a (colorgroup) element.</li>
+            <li>(thead) - groups the header content in a table.</li>
+            <li>(tbody) - groups the body content in a table.</li>
+            <li>(tfoot) - groups the footer content in a table.</li><br>
+    </section>
+    <section>
+        <table>
+            <caption>First Semester Grades</caption>
+            <thead>
+                <tr>
+                    <th rowspan="2">Names</th>
+                    <th colspan="3">Subjects</th>
+                </tr>
+                <tr>
+                    <td>C++</td>
+                    <td>Java</td>
+                    <td>Phyton</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Trisha</td>
+                    <td>94</td>
+                    <td>96</td>
+                    <td>98</td>
+                </tr>
+                <tr>
+                    <td>Nicole</td>
+                    <td>93</td>
+                    <td>95</td>
+                    <td>97</td>
+                </tr>
+                <tr>
+                    <td>L.Sañosa</td>
+                    <td>95</td>
+                    <td>91</td>
+                    <td>94</td>
+                </tr>
+                <tr>
+                <tfoot>
+                    <td colspan="4">Demo Row</td>
+                </tfoot>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    </body>
+</html>

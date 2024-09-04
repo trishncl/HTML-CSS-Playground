@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Special Characters (UTF-8)</title>
+
+        <style>
+            thead, tr, th, td {
+                border-width: 1px;
+                border-color: black;
+                border-style: solid;
+            }
+
+            tfoot {
+                background-color:azure;
+                text-align: center;
+            }
+
+            h1 {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="Non-Semantic & Semantic Elements.htm" class="link">next>></a>
+        <h1>HTML Entities</h1>
+            <p>Special Characters that are usually <b>not accessible</b> by the keyboard we instead use codes to display them in our HTML Document, it is also used to display reserved keywords from html like the "<" and ">" symbol.</p><br>
+            <p>HTML Entities are <b>displayed</b> by using an <b>ampersand "&"</b> followed by an <b>"entity name", "entity number"</b> or an <b>"entity hexadecimal"</b> and eding with a <b>semicolon ";"</b></p>
+        <table>
+            <thead>
+                <caption>HTML Entities Example</caption><br>
+                <tr>
+                    <th>Entity</th>
+                    <th>Description</th>
+                    <th>Entity Name</th>
+                    <th>Entity Number</th>
+                    <th>Entity Hex</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td>Non-breaking space</td>
+                    <td>ampersandnbsp;</td>
+                    <td>ampersand#160;</td>
+                    <td>ampersand#xa0;</td>
+                </tr>
+                <tr>
+                    <td><</td>
+                    <td>Less than</td>
+                    <td>ampersandlt;</td>
+                    <td>ampersand#60;</td>
+                    <td>ampersand#x3c;</td>
+                </tr>
+                <tr>
+                    <td>></td>
+                    <td>Greater than</td>
+                    <td>ampersandgt;</td>
+                    <td>ampersand#62;</td>
+                    <td>ampersand#x3e;</td>
+                </tr>
+                <tr>
+                    <td>£</td>
+                    <td>Pound</td>
+                    <td>ampersandpound;</td>
+                    <td>ampersand#163;</td>
+                    <td>ampersand#xa3;</td>
+                </tr>
+                <tr>
+                    <td>¥</td>
+                    <td>Yen</td>
+                    <td>ampersandyen; (&yen;)</td>
+                    <td>ampersand#165; (&#165;)</td>
+                    <td>ampersand#xa5;(&#xa5;)</td>
+                </tr>
+                <tr>
+                    <td>€</td>
+                    <td>Euro</td>
+                    <td>ampersandeuro;</td>
+                    <td>ampersand#8364;</td>
+                    <td>ampersand#x20AC;</td>
+                </tr>
+                <tr>
+                    <td>¢</td>
+                    <td>Cent</td>
+                    <td>ampersandcent;</td>
+                    <td>ampersand#162;</td>
+                    <td>ampersand#xa2;</td>
+                </tr>
+                <tr>
+                    <td>©</td>
+                    <td>Copyright</td>
+                    <td>ampersandcopy;</td>
+                    <td>ampersand#169;</td>
+                    <td>ampersand#xa9;</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <td colspan="5">"ampersand" is used instead of "&" to display the entities in the table.</td>
+            </tfoot>
+        </table>
+        <section>
+            <h1>HTML Emojis</h1>
+                <p>It looks like an icon but is actually a character, Emojis are characters from the <b>UTF-8 charset</b>, Emojis are also entities so it is accessed as same as the other HTML Entities, although they don't have an <i>"Entity Name"</i></p><br>
+                <p><b>Using UTF-8 Encoding:</b> (meta charset="UTF-8"/)</p>  
+            <h1>HTML Charsets</h1>  
+            <h3>ASCII</h3>
+                <p>It is the first character encoding standard. ASCII had <b>128 different characters</b> that could be used: numbers (0-9), English letters (A-Z), and some special characters like !$+-()@<>.</p>
+            <h3>ISO-8859-1</h3>
+                <p>It is the default character encoding of HTML 4 this character set had <b>256 characters.</b></p>
+            <h3>ANSI</h3>
+                <p>It was the original Windows character encoding it is same as the <b>ISO-8859-1</b> but this has <b>32 more characters.</bold></p>
+            <h3>UTF-8 (Unicode)</h3>
+                <p>Is the modern standard if character encoding it supports <b>1,112,064 characters</b>this includes the symbols and emojis.</p>
+        </section>
+    </body>
+</html>
