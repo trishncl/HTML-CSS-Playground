@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="(1)IDE & Hello World.css">
+    <link rel="icon" href="images/javascript-logo.webp">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>IDE & Hello World</h1>
+
+    <section>
+        <h3>Tutorial Flow</h3>
+        <ol>
+            <li>What is JavaScript?</li>
+            <li>Setup IDE</li>
+            <li>Using <|script|></li>
+            <li>Using console.log()</li>
+            <li>First "Hello World"</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>What is <b>JavaScript</b>?</h2>
+            <p>JavaScript is a <b>programming language</b> for websites. It can <b>manipulate</b> both HTML & CSS. It can perform <b>logical checks, calculation, modify</b> existing HTML & CSS codes and more. It is the <b>most popular programming language</b> as of the moment.</p>
+    </section>
+
+    <section>
+        <h2>Text Editor</h2>
+            <p>Any <b>software</b> used to edit text. Other text editors are especially made for coding that incorporates colored text for a certain language like JavaScript, it may also be called as an <b>Integrated Development Environment (IDE)</b>.</p>
+    </section>
+
+    <section>
+        <h2><|script|> Tag</h2>
+            <p>The <b>script tag</b> allows us to write JavaScript code inside of our HTML File.</p>
+                <img src="images/script tag.png">
+    </section>
+
+    <section>
+        <h2>console.log()</h2>
+            <p>This code displays a log in the developer console of browsers.</p>
+        <h2>Developer Tools</h2>
+            <p>A <b>useful tool</b> in <b>debugging JavaScript</b> codes and also viewing our output using console.log()</p>
+    </section>
+
+    <section>
+        <h2 title="mostly used for mobile phones">document.getElementById()</h2>
+            <p>This code <b>retrieves</b> an element from our HTML using its <b>ID</b> and lets us <b>manipulate</b> its <b>properties/attributes</b>.</p>
+                <img src="images/document.png">
+    </section>
+
+    <section>
+        <h4 id="sample"></h4>
+
+        <script>
+            console.log("This is done by the console.log")
+            document.getElementById("sample").innerHTML = "Hello World";
+        </script>
+
+        <i>*Remember that the element should be before the <|script|> tag when finding the element, so that the system can read the element.*</i>
+            <pre>
+                (script)
+                    document.getElementById("sample").innerHTML = "Hello World";
+                (/script)
+
+                (h4 id=sample)(/h4)
+                *The result will be an error.*
+
+                It should be like this:
+                (h4 id=sample)(/h4)
+
+                (script)
+                    document.getElementById("sample").innerHTML = "Hello World";
+                (/script)
+                *In this way, the system can read  the element.*
+            </pre>
+    </section>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/V01uCwftQ5o?si=G_s8S1afK4co00EX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

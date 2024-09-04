@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="(3)Numbers & Operators.css">
+    <title>Numbers & Operators</title>
+</head>
+<body>
+    <h1>Numbers & Operators</h1>
+
+    <div class="tutorial">
+        <ol>
+            <li>Numbers</li>
+            <li>Convert Strings to Numbers</li>
+            <li>Arithmetic Operators</li>
+            <li>PEMDAS</li>
+            <li>Shorthand Operators</li>
+            <li>Increment / Decrement</li>
+            <li>Tutorial Challenge</li>
+        </ol>
+    </div>
+
+    <div class="numbers">
+        <h2>Numbers</h2>
+            <p>One of the datatypes in JavaScipt. It maybe a whole number or a decimal.</p>
+
+            <ul>
+                <p>These are two types of numbers in JavaScript:</p>
+                <li><b>Integer</b> - Whole Numbers</li>
+                <li><b>Float</b> - Decimal Numbers</li>
+            </ul>
+
+            <table>
+                <caption>Example</caption>
+                <thead>
+                    <th>Value</th>
+                    <th>Type</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>5</td>
+                        <td>Number(integer)</td>
+                    </tr>
+                    <tr>
+                        <td>3.14</td>
+                        <td>Number(float)</td>
+                    </tr>
+                    <tr>
+                        <td>"12"</td>
+                        <td>String</td>
+                    </tr>
+                    <tr>
+                        <td>'3.1376'</td>
+                        <td>String</td>
+                    </tr>
+                    <tr>
+                        <td>6.54238</td>
+                        <td>Number(float)</td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+
+    <div class="convert">
+
+        <h2>Convert Strings to Numbers</h2>
+            <img src="images/convert.png">
+            <p>Unsuccessful conversions will result into a <b>Nan (Not A Number)</b> Value</p>
+
+            <p id="text"></p>
+
+    </div>
+
+    <div class="assignment">
+
+        <h2>Assignment Operator</h2>
+            <table>
+                <caption>used to put/assign values to variables</caption>
+                <thead>
+                    <th>Operator</th>
+                    <th>Function</th>
+                    <th>Example</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>=</td>
+                        <td>Assignment</td>
+                        <td>let num = 12</td>
+                    </tr>
+                </tbody>
+            </table>
+        
+    </div>
+
+    <div class="arithmetic">
+
+        <h2>Arithmetic Operator</h2>
+            <table>
+                <caption>Operators that can perform mathematical equations on numbers</caption>
+                <thead>
+                    <th>Operator</th>
+                    <th>Function</th>
+                    <th>Example</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>+</td>
+                        <td>Addition</td>
+                        <td>5 + 5</td>
+                    </tr>
+                    <tr>
+                        <td>-</td>
+                        <td>Substraction</td>
+                        <td>5 - 5</td>
+                    </tr>
+                    <tr>
+                        <td>=</td>
+                        <td>Assignment</td>
+                        <td>let num = 12</td>
+                    </tr>
+                    <tr>
+                        <td>*</td>
+                        <td>Multiplication</td>
+                        <td>5 * 5</td>
+                    </tr>
+                    <tr>
+                        <td>/</td>
+                        <td>Division</td>
+                        <td>5 / 5</td>
+                    </tr>
+                    <tr>
+                        <td>**</td>
+                        <td>Exponent</td>
+                        <td>5 ** 5</td>
+                    </tr>
+                    <tr>
+                        <td>%</td>
+                        <td>Modulus (Remainder)</td>
+                        <td>5 % 2</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Operators can be applied to variables as well.</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <h2>Arithmetic Precedence</h2>
+                <p>PEMDAS is followed in the order of precedence.</p>
+                    <ol>
+                        <li>Parentheses</li>
+                        <li>Exponent</li>
+                        <li>Multiplication</li>
+                        <li>Division</li>
+                        <li>Addition</li>
+                        <li>Subtraction</li>
+                    </ol>
+
+    </div>
+
+    <div class="shorthand">
+
+        <h2>Shorthand Operators</h2>
+            <table>
+                <caption>Performs an arithmetic operator to a variable and assigns it to itself.</caption>
+                <thead>
+                    <th>Operator</th>
+                    <th>Usage</th>
+                    <th>Same as</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>+=</td>
+                        <td>x += 5</td>
+                        <td>x = x + 5</td>
+                    </tr>
+                    <tr>
+                        <td>-=</td>
+                        <td>x -= 5</td>
+                        <td>x = x - 5</td>
+                    </tr>
+                    <tr>
+                        <td>*=</td>
+                        <td>x *= 5</td>
+                        <td>x = x * 5</td>
+                    </tr>
+                    <tr>
+                        <td>/=</td>
+                        <td>x /= 5</td>
+                        <td>x = x / 5</td>
+                    </tr>
+                    <tr>
+                        <td>**=</td>
+                        <td>x **= 5</td>
+                        <td>x = x ** 5</td>
+                    </tr>
+                    <tr>
+                        <td>%=</td>
+                        <td>x %= 5</td>
+                        <td>x = x % 5</td>
+                    </tr>
+                </tbody>
+            </table>
+
+    </div>
+
+    <div class="increment">
+
+        <h2>Increment / Decrement</h2>
+            <table>
+                <caption>Adds / Subtracts 1 to a variable</caption>
+                <thead>
+                    <th>Operator</th>
+                    <th>Usage</th>
+                    <th>Description</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>++</td>
+                        <td>++x or x++</td>
+                        <td>Adds 1</td>
+                    </tr>
+                    <tr>
+                        <td>--</td>
+                        <td>--x or x--</td>
+                        <td>Subtracts 1</td>
+                    </tr>
+                </tbody>
+            </table>
+        
+        <h3>Prefix</h3>
+            <img src="images/prefix.png">
+
+        <h3>Postfix</h3>
+            <img src="images/postfix.png">
+
+    </div>
+
+    <script src="js/(3)Numbers & Operators.js"></script>
+</body>
+</html>
+
+
